@@ -1,0 +1,5 @@
+package com.app.security.controller;
+
+public class DashboardController {
+
+}
