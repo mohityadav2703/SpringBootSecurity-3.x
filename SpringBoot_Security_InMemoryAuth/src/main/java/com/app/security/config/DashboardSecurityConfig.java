@@ -40,8 +40,12 @@ public class DashboardSecurityConfig {
 	// cusomize permission
 	@Bean // create object in container and we can modify this object in further process
 	public SecurityFilterChain security(HttpSecurity http) throws Exception {
-		http.authorizeHttpRequests((req) -> req.requestMatchers("/").permitAll().anyRequest().authenticated())
-				.httpBasic(Customizer.withDefaults()).formLogin(Customizer.withDefaults());
+		http.authorizeHttpRequests((req) -> req.requestMatchers("/")
+				.permitAll()
+				.anyRequest()
+				.authenticated())
+				.httpBasic(Customizer.withDefaults())
+				.formLogin(Customizer.withDefaults());
 
 		return http.build();
 	}
