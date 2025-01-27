@@ -35,7 +35,7 @@ public class CustomerService implements UserDetailsService{
 	@Override
 	public UserDetails loadUserByUsername(String name) throws UsernameNotFoundException {
 		
-		CustomerEntity cust=custRepo.findByUsername(name);
+		CustomerEntity cust=custRepo.findByname(name);
 		return new User(cust.getName(), cust.getPwd(), Collections.emptyList());
 	}
 

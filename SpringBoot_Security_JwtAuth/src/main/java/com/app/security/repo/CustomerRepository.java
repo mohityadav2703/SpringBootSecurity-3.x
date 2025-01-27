@@ -6,6 +6,6 @@ import com.app.security.entity.CustomerEntity;
 
 public interface CustomerRepository extends JpaRepository<CustomerEntity, Integer> {
 	
-	public CustomerEntity findByUsername(String name);
+	public CustomerEntity findByname(String name);
 
 }
