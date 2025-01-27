@@ -47,7 +47,7 @@ public class SecurityConfiguration {
 	}
 
 	/**
-	 * this method is used to validate the user credentials is given
+	 * this method is used to validate the user credentials, is given
 	 * credentials are match or not
 	 * @param config
 	 * @return
